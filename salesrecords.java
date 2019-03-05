@@ -1,4 +1,3 @@
-package ¸ê®Æ;
 import java.util.*;
 import java.io.*;
 
@@ -53,7 +52,7 @@ public class salesrecords {
 		ArrayList<Integer> B = new ArrayList<Integer>(b);
 		int max = B.get(0);
 		for (int i = 1; i < A.size(); i++) {
-			if(B.get(i) > B.get(i-1)){
+			if(B.get(i) > max){
 				max = B.get(i);
 			}
 		}
@@ -64,7 +63,7 @@ public class salesrecords {
 		ArrayList<Integer> B = new ArrayList<Integer>(b);
 		int min = B.get(0);
 		for (int i = 1; i < A.size(); i++) {
-			if(B.get(i) < B.get(i-1)){
+			if(B.get(i) < min){
 				min = B.get(i);
 			}
 		}
