@@ -1,12 +1,14 @@
+//∏Í∫ﬁ§G•“406401484¥^≈Ôµæ
+
 import java.util.*;
 import java.io.*;
 
-public class salesrecords {
+public class Salesrecords {
 	public static void main(String[] args) {
-		readData();
+		ReadData();
 	}
-	public static void readData() {
-		File infile = new File("itemData.txt");
+	public static void ReadData() {
+		File infile = new File("D://itemData.txt");
 		String itemName = new String();
 
 		ArrayList<String> lst_item = new ArrayList<>();
