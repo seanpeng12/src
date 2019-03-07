@@ -1,14 +1,18 @@
-//資管二甲406401484彭麟翔
+
 
 import java.util.*;
 import java.io.*;
+
+
 
 public class Salesrecords {
 	public static void main(String[] args) {
 		ReadData();
 	}
 	public static void ReadData() {
-		File infile = new File("D://itemData.txt");
+		System.out.println("資管二甲 。"+"406401484。"+"彭麟翔");
+		System.out.println("===============================");
+		File infile = new File("itemData.txt");
 		String itemName = new String();
 
 		ArrayList<String> lst_item = new ArrayList<>();
@@ -18,6 +22,7 @@ public class Salesrecords {
 			Scanner data = new Scanner(infile);
 			while (data.hasNext()) {
 				itemName = data.next();
+				//read until space;and nextline read until line 
 				amount = data.nextInt();
 				if (lst_item.contains(itemName)) {
 					int I = lst_item.indexOf(itemName);
