@@ -52,6 +52,7 @@ public class Salesrecords {
 			System.out.println("Error");
 		}
 	}
+	
 	public static int MaxPrice(ArrayList a,ArrayList b){
 		ArrayList<String> A = new ArrayList<String>(a);
 		ArrayList<Integer> B = new ArrayList<Integer>(b);
