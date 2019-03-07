@@ -1,9 +1,5 @@
-
-
 import java.util.*;
 import java.io.*;
-
-
 
 public class Salesrecords {
 	public static void main(String[] args) {
@@ -17,6 +13,7 @@ public class Salesrecords {
 
 		ArrayList<String> lst_item = new ArrayList<>();
 		ArrayList<Integer> lst_price = new ArrayList<>();
+		
 		int amount;
 		try {
 			Scanner data = new Scanner(infile);
@@ -34,6 +31,7 @@ public class Salesrecords {
 				}
 			}
 			data.close();
+			
 			//OUTPUT
 			System.out.println("每個貨物名稱以及該貨物總銷售量：");
 			for (int i = 0; i < lst_item.size(); i++) {
