@@ -8,7 +8,7 @@ public class Salesrecords {
 	public static void ReadData() {
 		System.out.println("資管二甲 。"+"406401484。"+"彭麟翔");
 		System.out.println("===============================");
-		File infile = new File("itemData.txt");
+		File infile = new File("D:\\itemData.txt");
 		String itemName = new String();
 
 		ArrayList<String> lst_item = new ArrayList<>();
@@ -36,7 +36,7 @@ public class Salesrecords {
 			System.out.println("每個貨物名稱以及該貨物總銷售量：");
 			for (int i = 0; i < lst_item.size(); i++) {
 				System.out.print(lst_item.get(i) + " ");
-				System.out.println("價格：" + lst_price.get(i));
+				System.out.println("銷售量：" + lst_price.get(i));
 				System.out.println("=============");
 			}
 			System.out.println("最高銷售量貨物名稱與銷售量：");
